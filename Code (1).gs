@@ -69,7 +69,7 @@ function doPost(e) {
 // Повідомлення в Telegram. Токен і chat id зберігаються у властивостях скрипта, а не на сайті
 function notify(text) {
   const p = PropertiesService.getScriptProperties();
-  const token = p.getProperty("TG_TOKEN"), chat = p.getProperty("TG_CHAT");
+  const token = p.getProperty("8616007517:AAFFtUrrvG8V0dFoVitPCIEGenVYuhC0KTY"), chat = p.getProperty("550966909");
   if (!token || !chat) return;
   try {
     UrlFetchApp.fetch("https://api.telegram.org/bot" + token + "/sendMessage", {
